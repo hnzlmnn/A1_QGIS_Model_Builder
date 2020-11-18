@@ -67,7 +67,7 @@ Use the command `gdalinfo` to answer the following questions about the **two DEM
 
 Within this exercise you will write a batch/shell script which calculates the slope and creates a hillshade image from a digital elevation model within a selected district of Slovenia. 
 
-##### 3.1 Creat batch/shell script [1pt]
+##### 3.1 Create batch/shell script [1pt]
 Create a file called _calculate\_slope\_hillshade.bat_ on Windows or _calculate\_slope\_hillshade.sh_ on Linux/Mac OS (first line should be) and add the following commands into the file.
 
 **Note for Mac OS/Linux:** The first line of the shell script should be `#!/bin/sh`.
