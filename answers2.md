@@ -16,6 +16,10 @@ GTiff/GeoTIFF
 0.000277777777778° -0.000277777777778° = 1 Winkelsekunde
 
 # 2.2 Creating a raster mosaic
+## gdalmerge
+`gdal_merge.py -o dem_merge.tif N45E014.hgt n45_e013_1arc_v3.tif`
+## gdalbuildvrt
+`gdalbuildvrt -separate dem_buildvrt.vrt N45E014.hgt n45_e013_1arc_v3.tif`
 ## What is the difference between the two output files?
 The file size and it's content. The merged image contains all pixels from both images, whereas the vrt only contains a XML structure that describes the merging process.
 ## What might be an advantage of using `gdalbuildvrt` instead of `gdalmerge`?
